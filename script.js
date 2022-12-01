@@ -329,3 +329,6 @@ console.log(anyBelow1991);
 
 console.log("-------------------------------------------------");
 
+const myVar = (1, 2, 3,100);
+
+console.log(myVar); // 100
