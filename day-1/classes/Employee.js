@@ -1,3 +1,5 @@
+console.log("This is Employee.js");
+
 import { User } from "./User.js";
 
 export class Employee extends User {
@@ -6,8 +8,8 @@ export class Employee extends User {
         this.salary = salary;
     }
 
-    getSalary(){
-    
+    getSalary() {
+
         console.log(this.salary);
     }
 }

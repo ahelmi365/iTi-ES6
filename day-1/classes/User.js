@@ -1,3 +1,5 @@
+console.log("This is User.js");
+
 export class User {
     constructor(name, age, address) {
         this.name = name;
@@ -9,3 +11,4 @@ export class User {
         console.log(this.name, this.age, this.address);
     }
 }
+
