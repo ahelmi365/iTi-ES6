@@ -329,6 +329,48 @@ console.log(anyBelow1991);
 
 console.log("-------------------------------------------------");
 
-const myVar = (1, 2, 3,100);
+const myVar = (1, 2, 3, 100);
 
 console.log(myVar); // 100
+
+
+console.log("-------------------------------------------------");
+
+// copy array in js
+const nums = [1, 2, 3, 4];
+const numCopy = [];
+let i = 0;
+
+while (i < nums.length) {
+    // numCopy[i] = nums[i];
+    numCopy.push(nums[i]);
+    i++;
+}
+console.log(numCopy);
+
+const nums2 = [1, 2, 3, 4];
+const copy2 = nums2.map((x) => x);
+console.log(copy2);
+
+const nums3 = [1, 2, 3, 4];
+const copy3 = Array.from(nums3)
+console.log(copy3);
+
+const nums4 = [1, 2, 3, 4];
+const copy4 = nums4.filter(() => true)
+console.log(copy4);
+
+const nums5 = [1, 2, 3, 4];
+const copy5 = nums5.slice();
+console.log(copy5);
+
+const nums6 = [1, 2, 3, 4];
+const copy6 = nums6.concat([])
+console.log(copy6);
+
+
+const nums7 = [1, 2, 3, 4];
+const copy7 = [...nums7]
+console.log(copy7);
+
+console.log("-------------------------------------------------");

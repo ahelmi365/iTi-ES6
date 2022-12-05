@@ -25,7 +25,6 @@ var Ids = new Promise(function (res, rej) {
 Ids.then((ids) => {
     console.log(ids);
     userData = getUser(ids[1])
-
     return userData
 }).then((userData) => {
     console.log(userData);
@@ -37,10 +36,9 @@ Ids.then((ids) => {
     return userData;
 }).then((userData) => {
     return getSalary(userData.userId)
-}).then((userSalary=>{
+}).then((userSalary => {
     console.log(userSalary);
-}))
-.catch((err) => {
+})).catch((err) => {
     alert(err);
 })
 // .catch((err) => alert(err));
